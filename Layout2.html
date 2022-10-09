@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+</head>
+
+<style>
+    /*flex styles*/
+    body{margin: 0;}
+     .layout1 { display: flex; height: 100vh;} 
+    .main {display: flex; flex-direction: column; flex: 80%;}
+    .content {display: flex;flex-direction: row;flex:70%;}
+    .header{flex: 15%; background-color: rgb(160, 231, 160);}
+    .footer{flex: 15%;background-color: rgb(160, 231, 160);}
+    .article { flex: 70%; background-color: white;}
+    .aside { flex: 30%; background-color: beige;}
+    /*coloring*/
+    .nav { background-color: rgb(193, 216, 187); flex: 20%;}
+    .pad10 { padding: 10px;}
+</style>
+
+<body>
+    <div class="layout1">
+        <div class="nav pad10">Nav</div>
+        <div class="main">
+            <div class="header pad10">Header</div>
+            <div class="content">
+                <div class="article pad10">Article</div>
+                <div class="aside pad10">Aside</div>
+            </div>
+            <div class="footer pad10">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
